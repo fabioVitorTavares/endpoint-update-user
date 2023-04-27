@@ -39,7 +39,6 @@ public class UserService {
                     return "Email já cadastrado!";
                 }
             }
-
             updatedUser.setNome(user.getNome());
             updatedUser.setEmail(user.getEmail());
             userRepository.save(updatedUser);
@@ -48,6 +47,5 @@ public class UserService {
             System.out.println("AAA" + e.getMessage() + "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             return e.getMessage();
         }
-
     }
 }
